@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dados y apuestas</title>
 </head>
+
 <body>
     <main>
         <h1>Dados y Apuestas</h1>
-        <h2>Introduce aquí tu jugada</h2>
+        <h2>Introduce aquí tu jugada:</h2>
         <form action="#">
-        <select class="js_select" name="select" id="select">
-        <option disabled selected>Qué número apuestas del 1 al 6</option>
-        <option value="num1">1</option>
-        <option value="num2">2</option>
-        <option value="num3">3</option>
-        <option value="num4">4</option>
-        <option value="num5">5</option>
-        <option value="num6">6</option>
-        
-        </select>
-        
-        </form>
-        </select>
-        <input class="js_imput" type="number" name="bet" id="bet" value="" required
-        placeholder="Qué número apuestas del 1 al 6?" />
-        
-        <button class="js_btn" >Jugar</button>
+            <select class="js_select" name="select" id="select">
+                <option disabled selected>Qué número apuestas del 1 al 6</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+
+            </select>
+            <input class="js_input" type="text"  name="bet" placeholder="¿Cuánto apuestas?">
+
+
+        <input class="js_btn" type="submit"  id="btn" value="Jugar">
         <p class="js_play">Vamos a jugar!</p>
-        <p class="js_result"></p>
-        <p
-     class="js_balance">Saldo 50</p>
-        <script src="./main.js"></script>
-        </main>
-      
+
+    </form>
+
+        <p>Saldo:</p> <span class="js_result">50</span>
+
+    </main>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
